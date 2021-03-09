@@ -1,0 +1,39 @@
+<!-- Chiedere all'utente il suo cognome e inserirlo in un array non ordinato. 
+Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stampa i tuoi dati</title>
+    <style>
+      * {
+        margin:0;
+        padding:0;
+      }
+      body {
+        background-color:lightblue;
+      }
+      .row {
+        text-align: center;
+      }
+      .row h1 {
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <h1 id="mainTitle"></h1>
+    </div>
+    <script>
+      var arr =[];
+      richiesta = '0';
+      while(richiesta != '.') {
+        richiesta= prompt('Scrivi i cognomi, per smettere scrivi <.>');
+        arr.push(richiesta);
+        richiesta === '.';
+      }
+    console.log(arr)
+    </script>
+  </body>
+</html>
